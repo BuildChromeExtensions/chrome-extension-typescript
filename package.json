@@ -1,0 +1,35 @@
+{
+  "name": "chrome-extension-typescript",
+  "version": "1.0.0",
+  "description": "How to build a chrome using Typescripts more especially for background and content scripts.",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuildChromeExtensions/chrome-extension-typescript.git"
+  },
+  "files": [
+    "/dist"
+  ],
+  "keywords": [
+    "chrome",
+    "extension",
+    "typscript",
+    "node",
+    "m2kdevelopments"
+  ],
+  "author": "M2K Developments",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BuildChromeExtensions/chrome-extension-typescript/issues"
+  },
+  "homepage": "https://github.com/BuildChromeExtensions/chrome-extension-typescript#readme",
+  "devDependencies": {
+    "@types/node": "^20.5.3",
+    "typescript": "^5.1.6",
+    "@types/chrome": "^0.0.270"
+  }
+}
