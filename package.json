@@ -4,7 +4,9 @@
   "description": "How to build a chrome using Typescripts more especially for background and content scripts.",
   "type": "commonjs",
   "scripts": {
-    "build": "tsc",
+    "build": "npm run clean && tsc && npm run copy",
+    "clean": "rimraf dist/",
+    "copy": "copyfiles -u 1 src/**/*.html src/**/*.css src/**/*.png src/**/*.json  dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +32,9 @@
   "devDependencies": {
     "@types/node": "^20.5.3",
     "typescript": "^5.1.6",
-    "@types/chrome": "^0.0.270"
+    "@types/chrome": "^0.0.270",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.1.6"
   }
 }
